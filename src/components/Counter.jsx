@@ -4,8 +4,9 @@ import { decrement, increment, incrementByAmount } from '../features/counterSlic
 
 
 export default function Counter() {
-    const count = useSelector(state=> state.counter.value);
-    const dispatch= useDispatch();
+    const count = useSelector(state =>
+         state.counterReducer.value);
+    const dispatch= useDispatch();;
 
     const [customValue, setCustomValue] =useState(0);
 
